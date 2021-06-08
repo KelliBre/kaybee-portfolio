@@ -87,6 +87,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /*=====General Styles=====*/
+* {
+  box-sizing: border-box;
+}
+
 html{
   font-size: 16px;
 }
@@ -105,6 +109,24 @@ img{
   width: 90%;
 }
 
+h2{
+  margin: 50px 15px;
+  color: #ec4c3c;
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background:#ec4c3c;
+  color: #f9f9f9;
+  padding: 0.25em 0.75em;
+  min-width: 10ch;
+  min-height: 44px;
+}
+
+
 /*=====NAVBAR Styles=====*/
 /* Style the navigation menu */
 .topnav {
@@ -116,6 +138,7 @@ img{
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  text-align: center;
 }
 
 /* Style navigation menu links */
@@ -153,6 +176,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero-area .content-wrapper{
   display: flex;
   justify-content: center;
@@ -165,13 +189,22 @@ img{
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  margin-bottom: 50px;
 }
+
 .hero-area h1, 
 h4{
-margin: 2.5px;
+margin: 0;
 }
+
 .contact-button{
   margin:10px;
+}
+
+.hero-area img{
+  border-radius: 50%;
+  width:70%;
+  margin-top: 50px;
 }
 
 /* SKILLS SECTION*/
@@ -211,24 +244,48 @@ margin: 2.5px;
 
 /*FEATURED PROJECT*/
 
-
-
-.featured-project .content-wrapper{
+.featured-project{
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-flow:  wrap;
   align-items: center;
   text-align: center;
 }
-.featured-project-text{
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  width: 80%;
-}
-.portfolio.button{
+
+.button{
   margin: 10px;
 }
+.featured-project h2 {
+  margin-bottom: 40px;
+  line-height: 1em;
+  text-align: left;
+}
+
+/*CONTACT SECTION*/
+.contact-section{
+  background:#ec4c3c ;
+  display: flex;
+  justify-self: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.contact-section .content-wrapper{
+  margin: 50px 15px;
+}
+
+.contact-info{
+  margin-bottom: 50px;
+}
+/*FOOTER SECTION*/
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background:#ec4c3c ;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -316,7 +373,75 @@ margin: 2.5px;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media only screen and (min-width: 768px){
+    /*Tablet styles here*/
+  
+    /*HOME PAGE: HERO AREA SECTION*/
+  .hero-area .content-wrapper{
+    justify-content: space-evenly;
+  }
 
+  .hero-text{
+    margin-bottom: 0;
+  }
+  .hero-area img{
+    width:30%;
+    margin: 0;
+  }
+    /*HOME PAGE: SKILLS SECTION*/
+  
+    .skills-area{
+      width: 100%;
+    }
+  
+    .skills-area article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      flex-basis: 33%;
+    }
+    
+    .skills-area .skill-item-description {
+      width: 60%;
+    }
+    
+    .skills-area img{
+      width:20%;
+    }
+  
+    /*HOME PAGE: FEATURED PROJECT SECTION*/
+  .featured-project{
+    margin: 50px 0;
+  }
+    .featured-project article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    .featured-project article figure{
+      width: 49%;
+    }
+    
+    .featured-project article div {
+      width:49%;         
+    }
+    .featured-project h2 {
+     width: 75%;
+    }
+    .featured-project h3 {
+      margin: 0;
+    }
+
+    /*HOME PAGE: CONTACT SECTION*/
+    .contact-section .content-wrapper{
+      display: flex;
+      justify-content: space-around;
+      margin: 50px 15px;
+    }
+  }
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
