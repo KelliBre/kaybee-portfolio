@@ -98,8 +98,8 @@ html{
 body{
   font-family: 'Raleway', sans-serif;
   font-size: 1em;
-  background: #f9f9f9;
-  color: #191919;
+  background: #feffff;
+  color: #17252a;
 }
 
 .content-wrapper {
@@ -108,10 +108,8 @@ body{
 img{
   width: 90%;
 }
-
-h2{
-  margin: 50px 15px;
-  color: #ec4c3c;
+h1{
+  font-family: 'Lato', sans-serif;
 }
 
 a.button {
@@ -119,7 +117,7 @@ a.button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background:#ec4c3c;
+  background:#3aafa9;
   color: #f9f9f9;
   padding: 0.25em 0.75em;
   min-width: 10ch;
@@ -131,7 +129,7 @@ a.button {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #ec4c3c;
+  background-color: #feffff;
   position: relative;
 }
 
@@ -143,16 +141,17 @@ a.button {
 
 /* Style navigation menu links */
 .topnav a {
-  color: white;
+  color:#17252a;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.87em;
   display: block;
+  
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: black;
+  background:#feffff;
   display: block;
   position: absolute;
   right: 0;
@@ -160,10 +159,6 @@ a.button {
 }
 
 
-/* Style the active link (or home/logo) */
-.active {
-  color: white;
-}
 
 /* HERO-AREA SECTION */
 .hero-area{
@@ -171,10 +166,10 @@ a.button {
   justify-content: center;
   flex-flow: row wrap;
   min-height: 600px;
-  background:url(../img/geometric-bg.png);
+  /*background:url(../img/geometric-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .hero-area .content-wrapper{
@@ -190,11 +185,20 @@ a.button {
   flex-flow: column;
   align-items: center;
   margin-bottom: 50px;
+
 }
 
+.hero-area h4{
+  font-weight: 300;
+}
 .hero-area h1, 
 h4{
 margin: 0;
+}
+
+.hero-area p{
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .contact-button{
@@ -202,7 +206,7 @@ margin: 0;
 }
 
 .hero-area img{
-  border-radius: 50%;
+  border-radius: .5%;
   width:70%;
   margin-top: 50px;
 }
@@ -212,7 +216,7 @@ margin: 0;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #f9f9f9;
+  background: #def2f1;
 }
   
 .skills-area article{
@@ -230,6 +234,7 @@ margin: 0;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 100px 0;
 }
 
 .skill-item-description{
@@ -252,36 +257,47 @@ margin: 0;
   text-align: center;
 }
 
+.featured-project .content-wrapper{
+  margin: 50px 0;
+}
 .button{
   margin: 10px;
 }
 .featured-project h2 {
   margin-bottom: 40px;
+  margin-left: 15px;
   line-height: 1em;
   text-align: left;
 }
 
+.featured-project img{
+  border: solid #2b7a78 3px;
+  border-radius:2%;
+}
+
 /*CONTACT SECTION*/
 .contact-section{
-  background:#ec4c3c ;
+  background:#2b7a78;
+  color: #feffff;
   display: flex;
   justify-self: center;
   flex-flow: row wrap;
   text-align: center;
 }
 .contact-section .content-wrapper{
-  margin: 50px 15px;
+  margin: 100px 15px;
 }
 
 .contact-info{
   margin-bottom: 50px;
 }
+
 /*FOOTER SECTION*/
 footer{
   display: flex;
   justify-content: center;
   margin: 0;
-  background:#ec4c3c ;
+  background:#2b7a78;
 }
 
 
@@ -411,14 +427,12 @@ footer{
     }
   
     /*HOME PAGE: FEATURED PROJECT SECTION*/
-  .featured-project{
-    margin: 50px 0;
-  }
     .featured-project article {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-flow: column;
+      
     }
 
     .featured-project article figure{
@@ -442,6 +456,7 @@ footer{
       margin: 50px 15px;
     }
   }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
