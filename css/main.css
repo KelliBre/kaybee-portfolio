@@ -96,7 +96,7 @@ html{
 }
 
 body{
-  font-family: 'Bitter', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background: #f7fff7;
   color: #333333;
@@ -116,7 +116,7 @@ figure{
  }
 
 h1{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
   font-weight: 700;
   font-size: 2.5em;
   line-height: 1em;
@@ -124,13 +124,17 @@ h1{
 }
 
 h2{
+  font-family: 'Comfortaa', cursive;
   font-size: 2.5em;
+  font-weight: 800;
   text-transform: uppercase;
   margin: 0;
 }
 
 h3{
+  font-family: 'Comfortaa', cursive;
   font-size: 1.875em;
+  color: #ec7e96;
 }
 
 h4{
@@ -256,7 +260,7 @@ a.button {
 
 .window-content .window-banner .name {
   color: #ec7e96;
-  font-family: bitter, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .window-area img{
@@ -302,10 +306,6 @@ a.button {
 }
 
 
-.skill-item-description{
-  font-weight: 700;
-}
-
 .skills-area img{
   width:35%;
   box-shadow: none;
@@ -317,7 +317,7 @@ a.button {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: RGBA(247,215,111,0.24);
+  background: RGBA(236,126,150,0.09);
 }
 
 .about .content-wrapper{
@@ -330,15 +330,15 @@ a.button {
   text-align: center;
 }
 .about img{
-  width: 50%;
+  width: 65%;
   margin-bottom:1.875em ;
 }
 
-.about h2{
-  margin-bottom: 2.5em;
-  line-height: 1em;
-  width: 100%;
+
+.about h3{
+  text-align: center;
 }
+
 
 .about p{
   margin:.625em 0;
@@ -359,8 +359,7 @@ a.button {
 }
 
 .featured-project h2 {
-  margin-bottom: 2.5em;
-  line-height: 1em;
+  margin-bottom: 1.5em;
 }
 
 .featured-project h3 {
@@ -400,6 +399,10 @@ a.button {
 }
 
 .contact-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   margin-bottom: 3.125em;
 }
 .social-icons{
@@ -407,6 +410,7 @@ a.button {
   justify-content: space-around;
   align-items: center;
   margin-top: 1.875em;
+  width: 60%;
 }
 
 .social-icons p{
@@ -529,9 +533,7 @@ footer{
      margin:4.6875em 0;
    }
 
-    body h2{
-      text-align: left;
-    }
+
     p{
       font-size: 2vmin;
     }
@@ -568,14 +570,17 @@ footer{
     .about article {
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-flow: row wrap;
     }
     
     .about article figure{
       width: 39%;
+      text-align: left;
     }
     .about img{
       margin-top:2.1875em;
+      width: 70%;
     }
     
     .about article div {
@@ -583,16 +588,9 @@ footer{
       justify-content: center;
       align-items: center;
       flex-flow: column nowrap;
-      width:49%;         
+      width:39%;        
     }
   
-    .about h3 {
-      width: 75%;
-      margin: 0;
-    }
-    .about h2{
-      margin-bottom: 0;
-    }
 
     /*HOME PAGE: SKILLS SECTION*/
   
@@ -627,7 +625,10 @@ footer{
     .featured-project article figure{
       width: 49%;
     }
-    
+    .featured-project img{
+      width: 80%;
+    }
+
     .featured-project article div {
       width:39%; 
       padding: 1em;        
@@ -635,6 +636,7 @@ footer{
 
     .featured-project h3 {
       margin: 0;
+      font-size: 1.25em;
     }
     .featured-project h2 {
       text-align: center;
@@ -668,6 +670,7 @@ footer{
 
   @media only screen and (min-width: 1200px){
     /*Desktop styles here*/
+    /*WINDOW AREA*/
     .window{
       max-width: 60%;
     }
@@ -675,14 +678,23 @@ footer{
       width:40%;
     }
 
-    .featured-project article{
+    /*FEATURED PROJECTS*/
+   .featured-project  article{
       margin-bottom: 3.5em;
     }
+    .featured-project article div{
+      width: 30%;
+    }
+
+    /*CONTACT SECTION*/
     .contact-section h3{
       font-size: 2.5em;
     }
     .contact-section h4{
       font-size: 2.1em;
+    }
+    .social-icons{
+      width: 40%;
     }
   }
 

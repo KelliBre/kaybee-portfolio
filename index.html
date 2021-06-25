@@ -26,17 +26,16 @@
   <!--Google fonts link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,100&family=Work+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
 <header class="topnav">
   <a href="index.html" class="active">kb.</a>
   <nav id="myLinks">
-    <a href="./about/index.html">About</a>
-    <a href="./portfolio/index.html">Portfolio</a>
-    <a href="./contact/index.html">Contact</a>
-    <a href="#">Blog</a>
+    <a href="#about">About</a>
+    <a href="#project">My Work</a>
+    <a href="#contact">Contact</a>
   </nav>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -65,7 +64,7 @@
   </section>
   <section class="skills-area">
     <div class="content-wrapper">
-      <h2>Services</h2>
+      <h2>My Services</h2>
       <div class="skill-items">
         <article>
           <img src="./img/website.png" alt="Website icon"/>
@@ -88,58 +87,41 @@
       </div><!--Skill-items end-->
   </div>
   </section>
-  <section class="about">
+  <section id="about"class="about">
     <div class="content-wrapper">
       <article>
         <figure>
           <img src="./img/cloud-hs-d1.png" alt="Kelli Brecunier Photo">
         </figure>
           <div>
-            <p>I am from a small town in Georgia, but I have bounced between Guam and San Diego for most of my adult life and happily claim both as part of what makes me…well…me.</p>
+            <h3> About Me</h3>
+            <p>I am from a small town in Georgia, but I have bounced between Guam and San Diego for most of my adult life and happily claim both as part of what makes me…well…me. When not at my keyboard you can find me somewhere near the water.</p>
             <p>My approach to web development is simple. I like clean, semantic and accessible code that is ready for collaboration and growth.</p>
           </div>
       </article>
      </div> 
   </section>
-  <section class="featured-project">
+  <section id="project" class="featured-project">
     <div class="content-wrapper">
-      <h2>My Work</h2>
+      <h2>Featured Project</h2>
       <article>
         <figure>
           <img src="./img/unplugged-showcase.jpg" alt="Unplugged Project Thumbnail">
         </figure>
           <div>
-            <h3>Unplugged</h3>
+            <h3>Unplugged Retreat</h3>
             <p>A responsive HTML + CSS Website built from a designer's PSD mock up.</p>
           </div>
       </article>
-      <article>
-        <figure>
-          <img src="./img/unplugged-showcase.jpg" alt="Unplugged Project Thumbnail">
-        </figure>
-          <div>
-            <h3>Unplugged</h3>
-            <p>A responsive HTML + CSS Website built from a designer's PSD mock up.</p>
-          </div>
-      </article>
-      <article>
-        <figure>
-          <img src="./img/unplugged-showcase.jpg" alt="Unplugged Project Thumbnail">
-        </figure>
-          <div>
-            <h3>Unplugged</h3>
-            <p>A responsive HTML + CSS Website built from a designer's PSD mock up.</p>
-          </div>
-      </article>
+      <a href="./portfolio/index.html" class="button">MORE</a>
      </div> 
   </section>
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="content-wrapper">
       <figure>
         <img src="./img/idea.png" alt="Light bulb Icon"/>
       </figure>
         <div class="contact-info">
-          <h3>Have a project or an audacious idea?</h3>
           <h4> Let's get to work!</h4>
           <p>
             <i class="fas fa-phone"></i> 671-486-5032
