@@ -15,8 +15,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
 
   <!--Font Link for Hamburger Menu-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,104 +24,96 @@
   <script src="https://kit.fontawesome.com/fb7634f518.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!--Google fonts link-->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Raleway:ital,wght@0,200;0,400;0,700;1,100&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
 <header class="topnav">
-  <a href="#home" class="active">KB</a>
+  <a href="index.html" class="active">kb.</a>
   <nav id="myLinks">
-    <a href="#news">About</a>
-    <a href="#contact">Portfolio</a>
-    <a href="#about">Contact</a>
-    <a href="#about">Blog</a>
+    <a href="#about">About</a>
+    <a href="#project">My Work</a>
+    <a href="#contact">Contact</a>
   </nav>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</header>
+</header><!--End Header Area-->
 <main>
-  <section class="hero-area">
+  <section id="project" class="featured-project">
     <div class="content-wrapper">
-      <div class="hero-text">
-        <h1>Kelli Brecunier</h1>
-        <h4>Developer, Designer, Creative Thinker</h4>
-        <p>Talofofo, Guam</p>
-        <a href="javascript:;" class="button">Contact</a>
-      </div>
-    </div>
-  </section>
-  <section class="skills-area">
-    <div class="skill-items">
-      <article>
-        <img src="./img/html.png" alt="HTML icon"/>
-        <p class="skill-item-description">Clean and Sematic that ensures content is easy to read and accessible.</p>
-      </article>
-      <article>
-        <img src="./img/layout.png" alt="Design icon"/>
-        <p class="skill-item-description">Layouts that are a pixel perfect match to your design mockup.</p>
-      </article>
-      <article>
-        <img src="./img/css.png" alt="CSS icon"/>
-        <p class="skill-item-description"> Lean CSS that is fast to load, easy to read and ready to grow!</p>
-      </article>
-      <article>
-        <img src="./img/javascript.png" alt="JS icon"/>
-        <p class="skill-item-description"> JavaScript that will make your content pop!</p>
-      </article>
-      <article>
-        <img src="./img/php.png" alt="PHP Icon "/>
-        <p class="skill-item-description"> Wordpress sites that work hard so you don't have to.</p>
-      </article>
-  </div><!--Skill-items end-->
-  </section>
-  <section class="featured-project">
-    <div class="content-wrapper">
-      <h2>Featured Project </h2>
+      <h2>My Work</h2>
       <article>
         <figure>
-          <img src="./img/unplugged-thumbnail-d3.png" alt="Unplugged Project Thumbnail">
+          <a href="https://kellibre.github.io/unplugged-website/index.html" target="_blank">
+            <img src="../img/unplugged-showcase.jpg" alt="Unplugged Project Thumbnail">
+          </a>
         </figure>
           <div>
-            <h3>Unplugged</h3>
+            <h3>Unplugged Retreat</h3>
             <p>A responsive HTML + CSS Website built from a designer's PSD mock up.</p>
-            <a href="javascript:;" class="button">Portfolio</a>
+          </div>
+      </article>
+      <article>
+        <figure>
+          <a href="https://kellibre.github.io/jubliee-austen/" target="_blank">
+            <img src="../img/jubilee-thumbnail.png" alt="jubilee thumbnail ">
+          </a>
+        </figure>
+          <div>
+            <h3>Jubilee Austen Portfolio</h3>
+            <p>An HTML + CSS Website built from a designer's PSD mock up.</p>
+          </div>
+      </article>
+      <article>
+        <figure>
+          <a href="#" target="_blank">
+            <img src="../img/rogue-pickings-thumbnail.png" alt="Rouge Pickings thumbnail ">
+          </a>
+        </figure>
+          <div>
+            <h3>Rouge Pickings</h3>
+            <p>Online Menu for Rouge Pickings</p>
           </div>
       </article>
      </div> 
   </section>
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <div class="content-wrapper">
+      <figure>
+        <img src="/img/idea.png" alt="Light bulb Icon"/>
+      </figure>
         <div class="contact-info">
-          <h4>Contact</h4>
+          <h4> Let's get to work!</h4>
           <p>
             <i class="fas fa-phone"></i> 671-486-5032
           </p>
           <p>
             <i class="fas fa-envelope"></i> Kelli.Brecunier@gmail.com
           </p>
-        </div>
-        <div class="social-links">
-          <h4>Social</h4> 
-          <p>
-            <i class="fab fa-linkedin"></i> Kelli Brecunier
-          </p>
-          <p>
-            <i class="fab fa-github"></i> Find me on GitHub
-          </p>
-          <p>
-            <i class="fab fa-codepen"></i> Check out my CodePen
-          </p>
-        </div>
-    </div>
-  </section>
+          <div class="social-icons">
+            <p>
+              <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            </p>
+            <p>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+            <p>
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            </p>
+          </div><!--Social-icons end-->
+        </div><!--Contact-info end-->
+    </div><!--Content-wrapper end-->
+  </section><!--Contact-section end-->
 </main>
 <footer>
   <p>KB Web Development // 2021</p> 
 </footer>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/plugins.js"></script>
+  <script src="/js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
