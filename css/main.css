@@ -226,12 +226,13 @@ a.button:hover{
   display: none;
   justify-content: center;
   padding-left: 0;
-  font-size: 1.25em;
 }
 
 /* Icons */
 .navbar__icons li {
   padding: 8px 12px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
 /* Toggle button */
@@ -684,7 +685,7 @@ footer{
     color:RGB(168,213,203);
     display: flex;
     padding-left: 0;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   /* Icons */
