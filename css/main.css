@@ -551,17 +551,23 @@ footer{
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   text-align: center;
-  margin: 100px 0;
+
   }
   
   .services-div1 { 
-    grid-area: 1 / 2 / 2 / 5; 
-
+    grid-area: 1 / 1 / 2 / 6; 
+    background:RGBA(168,213,203);
+    color: #f7fff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .services-div2 { 
     grid-area: 2 / 2 / 3 / 5; 
     margin-bottom: 50px;
   }
+
   .services-div3 { 
     grid-area: 3 / 2 / 4 / 5;
     margin-bottom: 50px; 
@@ -571,10 +577,21 @@ footer{
     grid-area: 4 / 2 / 5 / 5;
     margin-bottom: 50px; 
   }
+
   .services-div5 { 
     grid-area: 5 / 2 / 6 / 5; 
    }
-  
+
+  #services-area img{
+    margin-top: 50px;
+    width: 35%;
+  }
+  #services-area h1{
+    margin-bottom:0 ;
+  }
+  #services-area p{
+    margin: 0;
+  }
   .tiny-text{
      font-size: .75em;
      text-transform: uppercase;
@@ -896,6 +913,19 @@ footer{
       grid-area: 3 / 1 / 5 / 3;
 
     }
+    /*PROCESS PAGE*/
+    .services-parent {
+      display: grid;
+      grid-template-columns: .2fr repeat(3, 1fr) .2fr;
+      grid-template-rows: repeat(4, 1fr); 
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+      
+      .services-div1 { grid-area: 1 / 1 / 2 / 6; }
+      .services-div2 { grid-area: 2 / 2 / 5 / 3; }
+      .services-div3 { grid-area: 2 / 3 / 5 / 4; }
+      .services-div4 { grid-area: 2 / 4 / 5 / 5; } 
   }
 
   @media only screen and (min-width: 1200px){
