@@ -589,28 +589,14 @@ footer{
   #services-area h1{
     margin-bottom:0 ;
   }
-  #services-area p{
-    margin: 0;
-  }
+
   .tiny-text{
      font-size: .75em;
      text-transform: uppercase;
+     margin-top: 15px;
+     font-weight: bold;
    }
-/* DESKTOP
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 2fr 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 1 / 2 / 2 / 5; }
-    .div2 { grid-area: 2 / 2 / 3 / 3; }
-    .div3 { grid-area: 2 / 3 / 3 / 4; }
-    .div4 { grid-area: 2 / 4 / 3 / 5; }
-    .div5 { grid-area: 3 / 2 / 4 / 5; }
-    */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -889,7 +875,7 @@ footer{
     
     .contact-info{
       margin: 0;
-      width: 50%;
+
     }
 
   /*PORTFOLIOS page*/
@@ -913,7 +899,7 @@ footer{
       grid-area: 3 / 1 / 5 / 3;
 
     }
-    /*PROCESS PAGE*/
+    /*Service PAGE*/
     .services-parent {
       display: grid;
       grid-template-columns: .2fr repeat(3, 1fr) .2fr;
@@ -922,10 +908,22 @@ footer{
       grid-row-gap: 0px;
       }
       
-      .services-div1 { grid-area: 1 / 1 / 2 / 6; }
-      .services-div2 { grid-area: 2 / 2 / 5 / 3; }
-      .services-div3 { grid-area: 2 / 3 / 5 / 4; }
-      .services-div4 { grid-area: 2 / 4 / 5 / 5; } 
+      .services-div1 { 
+        grid-area: 1 / 1 / 2 / 6; 
+      }
+      .services-div2 { 
+        grid-area: 2 / 2 / 5 / 3; 
+      }
+      .services-div3 { 
+        grid-area: 2 / 3 / 5 / 4; 
+      }
+      .services-div4 { 
+        grid-area: 2 / 4 / 5 / 5; 
+      } 
+      .service-item{
+        padding: 15px;
+      }
+
   }
 
   @media only screen and (min-width: 1200px){
